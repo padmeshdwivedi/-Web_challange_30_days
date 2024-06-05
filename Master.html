@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masater Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        body{
+            margin: 0;
+             position: absolute;
+             top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            
+        }
+        .master_card{
+            height: fit-content;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: url("Image/bg.png");
+            background-size: cover;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .top{
+            margin-top: 20px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header .logo,.chip{
+            margin: 0 20px 0 20px;
+        }
+        h3{
+            opacity: 0.7;
+            font-size: 20px;
+        }
+        #head img,h3{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .content{
+            height: fit-content;
+            width: fit-content;
+            margin: 30px 10px 15px 20px;
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+        }
+        #name,.detail{
+            margin: 0 20px 10px 20px ;
+        }
+        h4,h5{
+            opacity: 0.7;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="master_card">
+        <div class="top">
+            <div class="header">
+                <div id="head">
+                 <img src="/Image/logo.png" alt="logo" class="logo" style="height: 20px;">
+                 <h3>Master Card</h3>
+                </div>
+                 <img src="Image/chip.png" alt="chip" class="chip" style="height: 24px;">
+             </div>
+        </div>
+        <div class="content">
+            <h5>Card Number</h5>
+            <h4>8050 1220 1331 3003</h4>
+        </div>
+        <div class="name">
+            <h4 id="name">Web Developer</h4>
+            <div class="detail">
+                <h5>Valid Thru</h5>
+                <h5>05/28</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
